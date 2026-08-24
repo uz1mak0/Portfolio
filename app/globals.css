@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #f5f5f5;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #f5f5f5;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: hidden;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-attachment: fixed;
+  }
+}
+
+/* Glassmorphism & Translucent Accents with Bold Typography Grid */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.55);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(26, 26, 26, 0.7);
+  border-color: rgba(255, 255, 255, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.7), 0 0 20px 2px rgba(6, 182, 212, 0.08);
+}
+
+.glass-card-interactive {
+  background: rgba(15, 15, 15, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Minimalist Button Styling with Bold Typography Tracking */
+.btn-minimal {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  color: #f1f5f9;
+  backdrop-filter: blur(12px);
+}
+
+.btn-minimal:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.06);
+}
+
+.btn-minimal-primary {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.125rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(6, 182, 212, 0.45);
+  background: rgba(6, 182, 212, 0.1);
+  color: #22d3ee;
+  backdrop-filter: blur(12px);
+}
+
+.btn-minimal-primary:hover {
+  background: rgba(6, 182, 212, 0.2);
+  border-color: rgba(6, 182, 212, 0.8);
+  color: #67e8f9;
+  box-shadow: 0 0 22px rgba(6, 182, 212, 0.25);
+}
+
+/* Subtle Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 182, 212, 0.4);
+}
+
+/* Ambient glow orb animations */
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(16px, -16px) scale(1.04);
+  }
+}
+
+.animate-glow-slow {
+  animation: floatGlow 14s ease-in-out infinite;
+}
