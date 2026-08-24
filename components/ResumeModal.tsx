@@ -19,7 +19,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md overflow-y-auto animate-in fade-in duration-200">
       <div className="relative w-full max-w-3xl max-h-[90vh] flex flex-col bg-[#0a0a0a] border border-white/10 rounded-2xl shadow-2xl overflow-hidden my-auto">
-        
+
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/[0.08] bg-black/80 backdrop-blur-md">
           <div className="flex items-center gap-3">
@@ -52,7 +52,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
 
         {/* Content Body */}
         <div className="p-6 sm:p-8 overflow-y-auto space-y-6 text-slate-300 text-xs sm:text-sm bg-black/40">
-          
+
           {/* Header section */}
           <div className="border-b border-white/[0.08] pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
             <div>
@@ -69,9 +69,9 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           <div className="space-y-2">
             <h4 className="text-[10px] uppercase tracking-[0.25em] font-bold text-slate-400">Executive Summary</h4>
             <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
-              Results-driven Full Stack Developer and AI Engineer with deep expertise in architecting resilient Next.js applications, 
-              scalable Amazon Web Services (AWS) serverless backends, GraphQL APIs, and automated multi-agent AI pipelines. 
-              Proven track record in building high-scale automated workflows serving millions of travelers, enterprise-grade fleet dispatch systems, 
+              Full Stack Developer and AI Engineer with deep expertise in architecting resilient Next.js applications,
+              scalable Amazon Web Services (AWS) serverless backends, GraphQL APIs, and automated multi-agent AI pipelines.
+              Proven track record in building high-scale automated workflows serving millions of travelers, enterprise-grade fleet dispatch systems,
               and AI-driven transport logistics management suites.
             </p>
           </div>
@@ -102,7 +102,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           {/* Key Project Achievements */}
           <div className="space-y-3">
             <h4 className="text-[10px] uppercase tracking-[0.25em] font-bold text-slate-400">Key Engineering Projects</h4>
-            
+
             {PORTFOLIO_DATA.projects.map((p) => (
               <div key={p.id} className="p-3.5 rounded-xl bg-black/50 border border-white/[0.06] space-y-1.5">
                 <div className="flex items-center justify-between">
