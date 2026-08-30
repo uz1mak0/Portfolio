@@ -1,6 +1,6 @@
 import type { NextConfig } from 'next';
 
-const repoName = 'YOUR_REPOSITORY_NAME'; // Replace with your exact GitHub repository name (e.g. 'my-portfolio')
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
   images: {
-    unoptimized: true, // Required: Disables Next.js server-side image optimization for static exports
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
@@ -21,9 +21,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  output: 'export', // Changed from 'standalone' to 'export' for GitHub Pages
-  basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '',
+  output: 'export',
+  // Exactly matches your GitHub repository name with leading slash
+  basePath: isProd ? '/Portfolio' : '',
   transpilePackages: ['motion'],
   webpack: (config, { dev }) => {
     if (dev && process.env.DISABLE_HMR === 'true') {
