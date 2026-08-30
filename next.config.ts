@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 
 const isProd = process.env.NODE_ENV === 'production';
+const repoName = '/Portfolio';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -22,8 +23,9 @@ const nextConfig: NextConfig = {
     ],
   },
   output: 'export',
-  // Exactly matches your GitHub repository name with leading slash
-  basePath: isProd ? '/Portfolio' : '',
+  basePath: isProd ? repoName : '',
+  assetPrefix: isProd ? `${repoName}/` : '',
+  trailingSlash: true, // Forces routes and asset requests to explicitly end with a slash
   transpilePackages: ['motion'],
   webpack: (config, { dev }) => {
     if (dev && process.env.DISABLE_HMR === 'true') {
