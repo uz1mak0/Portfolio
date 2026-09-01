@@ -104,7 +104,7 @@ export const PORTFOLIO_DATA = {
       accentColor: "#10b981",
       badge: "Civic & Logistics",
       githubUrl: "https://github.com/uz1mak0/toda-management-system.git",
-      liveDemoUrl: "https://toda-management-system-8kv35y0w9-ryan-barcebals-projects.vercel.app",
+      liveDemoUrl: "https://uz1mak0.github.io/toda-management-system/",
       demoType: "toda"
     },
     {
@@ -136,7 +136,7 @@ export const PORTFOLIO_DATA = {
       accentColor: "#38bdf8",
       badge: "Flagship AI Project",
       githubUrl: "https://github.com/uz1mak0/yan-ravel.git",
-      liveDemoUrl: "https://yan-ravel-cclwy6slw-ryan-barcebals-projects.vercel.app",
+      liveDemoUrl: "https://uz1mak0.github.io/yan-ravel/",
       demoType: "travel"
     }
   ] as Project[],
