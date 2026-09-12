@@ -69,13 +69,19 @@ export const PORTFOLIO_DATA = {
       ]
     },
     {
-      title: "AI Tools & Intelligent Agents",
+      title: "AI Systems & Automation",
       description: "Next-generation model integration, prompt engineering, and visual workflow automation",
       skills: [
         { name: "Gemini AI", level: "Advanced", icon: "Sparkles", highlight: true, description: "Multimodal reasoning, structured JSON schemas, high-speed context" },
         { name: "Google AI Studio", level: "Advanced", icon: "Bot", highlight: true, description: "Prototyping, prompt tuning, system directives, API orchestration" },
         { name: "Claude Code", level: "Advanced", icon: "Terminal", highlight: true, description: "Agentic coding workflows, automated refactoring, terminal automation" },
-        { name: "n8n Automation", level: "Advanced", icon: "Workflow", highlight: true, description: "Enterprise orchestration, webhook triggers, multi-node AI pipelines" }
+        { name: "n8n Automation", level: "Advanced", icon: "Workflow", highlight: true, description: "Enterprise orchestration, webhook triggers, multi-node AI pipelines" },
+        {
+          name: "Hermes AI Agent",
+          level: "Advanced",
+          icon: "Bot",
+          description: "Autonomous AI agent framework with persistent memory, custom SKILL.md workflows, and multi-platform orchestration."
+        }
       ]
     }
   ],
