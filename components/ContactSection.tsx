@@ -1,15 +1,15 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Mail, 
-  Send, 
-  Copy, 
-  Check, 
-  Sparkles, 
-  MessageSquare, 
-  Clock, 
-  ShieldCheck, 
+import {
+  Mail,
+  Send,
+  Copy,
+  Check,
+  Sparkles,
+  MessageSquare,
+  Clock,
+  ShieldCheck,
   Globe,
   ArrowUpRight
 } from 'lucide-react';
@@ -41,7 +41,7 @@ export default function ContactSection() {
         spread: 70,
         origin: { y: 0.8 }
       });
-    } catch (err) {}
+    } catch (err) { }
   };
 
   const templates = [
@@ -53,7 +53,7 @@ export default function ContactSection() {
   return (
     <section id="contact-section" className="py-20 px-4 sm:px-6 lg:px-8 relative bg-white/[0.01]">
       <div className="max-w-6xl mx-auto space-y-12">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-3">
           <div className="text-[10px] uppercase tracking-[0.4em] font-bold text-cyan-400">
@@ -68,10 +68,10 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          
+
           {/* Left Column: Direct Credentials & Status */}
           <div className="lg:col-span-5 space-y-4">
-            
+
             {/* Quick Contact Card */}
             <div className="glass-panel p-6 rounded-2xl border border-white/[0.08] space-y-5">
               <div>
@@ -135,7 +135,7 @@ export default function ContactSection() {
             </div>
 
             {/* Quick Templates */}
-            <div className="glass-panel p-5 rounded-2xl border border-white/[0.08] space-y-3">
+            {/* <div className="glass-panel p-5 rounded-2xl border border-white/[0.08] space-y-3">
               <div className="text-[10px] uppercase tracking-widest font-bold text-slate-400">Quick Inquiries:</div>
               <div className="space-y-2">
                 {templates.map((tpl, idx) => (
@@ -152,7 +152,7 @@ export default function ContactSection() {
                   </button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
           </div>
 
@@ -166,7 +166,7 @@ export default function ContactSection() {
                   </div>
                   <h3 className="text-2xl font-black uppercase text-slate-100">Transmission Dispatched</h3>
                   <p className="text-xs text-slate-400 max-w-md mx-auto">
-                    Thank you for reaching out. A confirmation has been drafted to <strong>{email}</strong>. 
+                    Thank you for reaching out. A confirmation has been drafted to <strong>{email}</strong>.
                     You can also email directly at <strong>{PORTFOLIO_DATA.profile.email}</strong>.
                   </p>
                   <button
@@ -236,7 +236,7 @@ export default function ContactSection() {
                       className="btn-minimal-primary gap-2 cursor-pointer"
                     >
                       <Send className="w-3.5 h-3.5" />
-                      <span>Send Transmission</span>
+                      <span>Send</span>
                     </button>
                   </div>
                 </form>

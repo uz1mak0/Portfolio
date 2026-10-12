@@ -1,17 +1,17 @@
 'use client';
 
 import React, { useState } from 'react';
-import { 
-  Sparkles, 
-  ArrowDown, 
-  Terminal, 
-  Cpu, 
-  Workflow, 
-  Cloud, 
-  Code2, 
-  CheckCircle2, 
-  Copy, 
-  Check, 
+import {
+  Sparkles,
+  ArrowDown,
+  Terminal,
+  Cpu,
+  Workflow,
+  Cloud,
+  Code2,
+  CheckCircle2,
+  Copy,
+  Check,
   ExternalLink,
   Bot
 } from 'lucide-react';
@@ -52,7 +52,7 @@ export default function Hero({ onOpenCopilot, onOpenResume, onSelectProject }: H
       <div className="absolute bottom-10 left-1/4 w-[500px] h-[300px] bg-teal-600/10 blur-[140px] rounded-full pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto w-full text-center space-y-8">
-        
+
         {/* Role & Status Pill */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded bg-white/[0.04] backdrop-blur-xl border border-white/[0.1] shadow-inner">
           <span className="flex h-2 w-2 relative">
@@ -140,7 +140,7 @@ export default function Hero({ onOpenCopilot, onOpenResume, onSelectProject }: H
 
         {/* Live Architecture Metric Bar (Translucent Glass Panel) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 pt-6 max-w-4xl mx-auto text-left">
-          {PORTFOLIO_DATA.profile.stats.map((stat, idx) => (
+          {/* {PORTFOLIO_DATA.profile.stats.map((stat, idx) => (
             <div
               key={idx}
               className="glass-panel p-4 rounded-xl border border-white/[0.08] hover:border-cyan-500/40 transition-all group"
@@ -153,7 +153,7 @@ export default function Hero({ onOpenCopilot, onOpenResume, onSelectProject }: H
                 {stat.value}
               </div>
             </div>
-          ))}
+          ))} */}
         </div>
 
         {/* Scroll indicator */}
